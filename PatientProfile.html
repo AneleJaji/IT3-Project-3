@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Profile</title>
+  <link rel="stylesheet" href="PatientProfile.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="images/ClinicConnect-removebg-preview 2.png" alt="Logo" />
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+        <li><a href="ViewSchedule.html">View Schedule</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="login-icon">
+      <img src="images/Generic avatar.png" alt="User Icon" />
+      <a href="#">Dr. ABC</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Patient : <span>XYZ</span></h1>
+
+    <section class="layout">
+      <aside class="sidebar">
+        <div class="panel avatar-panel">
+          <div class="avatar">
+            <img src="images/Generic avatar.png" alt="Avatar" />
+          </div>
+          <div class="profile-meta">
+            <h3>Profile View</h3>
+            <ul>
+              <li><span>Gender:</span> <strong>Male</strong></li>
+              <li><span>Age :</span> <strong>24</strong></li>
+              <li><span>Language :</span> <strong>English</strong></li>
+              <li><span>Height :</span> <strong>1.78cm</strong></li>
+              <li><span>Weight :</span> <strong>96kg</strong></li>
+              <li><span>Ethnicity:</span> <strong>Black</strong></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel allergies-panel">
+          <h3>Allergies</h3>
+          <ul id="allergyList" class="allergy-list">
+            <li><span>Seafood</span> <span class="pill high">High</span></li>
+            <li><span>Penicillin</span> <span class="pill medium">Medium</span></li>
+          </ul>
+          <button id="addAllergyBtn" class="link-btn">+ Add Allergy</button>
+        </div>
+
+        <div class="panel notes-panel">
+          <h3>Medical Notes</h3>
+          <textarea id="notes" rows="8" placeholder="Enter notes..."></textarea>
+          <div class="notes-actions">
+            <button id="saveNotesBtn" class="btn">Save Notes</button>
+          </div>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="panel details-panel">
+          <h3>Personal Details</h3>
+          <div class="details-grid">
+            <div>
+              <div class="muted">Name</div>
+              <div>Kevin</div>
+            </div>
+            <div>
+              <div class="muted">Last-Name</div>
+              <div>Manhatten</div>
+            </div>
+            <div>
+              <div class="muted">Birth-date</div>
+              <div>12/03/23</div>
+            </div>
+            <div>
+              <div class="muted">Phone- Number</div>
+              <div>087-987-3332</div>
+            </div>
+            <div class="span-2">
+              <div class="muted">Address</div>
+              <div>12 Cricket Bungco street<br/>7996<br/>Cape Town<br/>South Africa</div>
+            </div>
+            <div class="span-2">
+              <div class="muted">Email</div>
+              <div>KevinG@gmail.com</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel prescription-panel">
+          <h3>Prescription</h3>
+          <div class="prescription-grid">
+            <label>
+              <span class="muted">Delivery Type</span>
+              <select>
+                <option>Pickup(Default)</option>
+                <option>Deliver to address</option>
+              </select>
+            </label>
+            <label>
+              <span class="muted">Drug Line 2</span>
+              <select>
+                <option>Brand</option>
+              </select>
+            </label>
+            <label>
+              <span class="muted">Drug Line 2</span>
+              <select>
+                <option>Generic</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="panel drugs-panel">
+          <h3>Used Drug</h3>
+          <div class="table-scroll">
+            <table class="drug-table">
+              <thead>
+                <tr>
+                  <th>Brand Name</th>
+                  <th>Generic Name</th>
+                  <th>Dosage</th>
+                  <th>pack</th>
+                  <th>form</th>
+                  <th>Manufacture</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Apo-CiroFlux</td>
+                  <td>Apo-CiroFlux</td>
+                  <td>10MG</td>
+                  <td>100</td>
+                  <td>Tab</td>
+                  <td>Apotex Industries</td>
+                </tr>
+                <tr>
+                  <td>Adco Linctopent</td>
+                  <td>Broncolilator</td>
+                  <td>20MG</td>
+                  <td>65</td>
+                  <td>Medical syrup</td>
+                  <td>Pharma Dynamics</td>
+                </tr>
+                <tr>
+                  <td>Texamer</td>
+                  <td>Levocetirizien</td>
+                  <td>5MG</td>
+                  <td>60</td>
+                  <td>Pill</td>
+                  <td>Adcock Ingram</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+  <script src="PatientProfile.js"></script>
+</body>
+</html>
